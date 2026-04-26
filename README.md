@@ -14,12 +14,6 @@ The project follows the same high-level control-plane/data-plane model as Kubern
 
 ![Kubernetes Cluster Architecture](https://kubernetes.io/images/docs/kubernetes-cluster-architecture.svg)
 
-If you want to use the exact image you shared in chat, save it as `docs/k8s-architecture.png` and replace the URL above with:
-
-```md
-![Kubernetes Cluster Architecture](docs/k8s-architecture.png)
-```
-
 ## What This Project Implements
 
 ### Component Mapping (K8s -> This Project)
