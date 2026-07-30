@@ -1,5 +1,4 @@
 import { jobCriSchedular, jobDispatchScheduler, jobWatcherSchedular } from "./queues/queues.js";
-import { jobDispatchWorker, jobCriWorker } from "./queues/workers.js";
 
 async function init() {
     Promise.all([

@@ -1,6 +1,6 @@
 import { Worker } from 'bullmq';
 import db from '../db/index.js';
-import { jobsTable, jobStatusEnum, jobStatusEnumValues } from '../db/schema.js';
+import { jobsTable, jobStatusEnumValues } from '../db/schema.js';
 import { eq, inArray, sql } from 'drizzle-orm';
 import Docker from 'dockerode';
 
@@ -160,7 +160,7 @@ export const jobWatch = new Worker('job-watcher', async () => {
             }
         }
 
-    }, {accessMode: 'read write', isolationLevel: 'read committed'});
+    }, { accessMode: 'read write', isolationLevel: 'read committed' });
 }, {
     connection: {
         host: '127.0.0.1',
